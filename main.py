@@ -8,6 +8,7 @@ import tutorial as tutorial
 import utilities
 import openLoopControl as olc
 import obstacleDetector as obstacleDetector
+import IR as IR
 
 print ('Welcome to ev3')
 
@@ -38,8 +39,11 @@ print ('Welcome to ev3')
 # Step E: Record values from the ultrasonic to a text file
 #tutorial.recordUltraSonic()
 
-obstacleDetector.searchForObstacles()
+"""1. Follow Lines"""
+IR.followLines()
+
+#obstacleDetector.searchForObstacles()
 
 # remove this if you want it to exit as soon as its done:
-print "wait 10sec, then end"
-time.sleep(10)
+print "wait 1sec, then end"
+time.sleep(1)
